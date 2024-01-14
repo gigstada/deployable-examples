@@ -13,5 +13,5 @@ dev:
 deploy:
 # This is the command to deploy to Cloud Run. 
 # You will need to explicitly set the environment variables that you want available in your application.
-	gcloud run deploy hello-fastapi --source . --project ${GCP_PROJECT_ID} --region ${GCP_REGION} --verbosity=debug \
+	gcloud run deploy ${GCP_SERVER_NAME} --source . --project ${GCP_PROJECT_ID} --region ${GCP_REGION} --verbosity=debug \
 	--update-env-vars SOME_ENV_VAR="${SOME_ENV_VAR}",ANOTHER_VAR="some value" --allow-unauthenticated
