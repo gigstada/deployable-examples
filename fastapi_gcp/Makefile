@@ -10,7 +10,6 @@ install:
 dev:
 	uvicorn server:app --reload
 
-
 deploy:
 # This is the command to deploy to Cloud Run. 
 # You will need to explicitly set the environment variables that you want available in your application.
