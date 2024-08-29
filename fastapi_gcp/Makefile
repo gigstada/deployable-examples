@@ -8,7 +8,7 @@ install:
 	pip install -r requirements.txt
 
 dev:
-	uvicorn server:app --reload
+	uvicorn server:app --reload --host=0.0.0.0 --port=8999
 
 deploy:
 # This is the command to deploy to Cloud Run. 
